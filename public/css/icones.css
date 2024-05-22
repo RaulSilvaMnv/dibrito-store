@@ -1,0 +1,95 @@
+.icone {
+    width: 25px;
+    height: 25px;
+    background-size: 25px !important;
+}
+/* Facebook */
+.facebook {
+    background-image: url(images/icones/Facebook.png);
+    background-repeat: no-repeat;
+}
+/* Instagram */
+.instagram {
+    background-image: url(images/icones/Instagram.png);
+    background-repeat: no-repeat;
+}
+/* Call */
+.call {
+    background-image: url(images/icones/Call.png);
+    background-repeat: no-repeat;
+}
+/* Chat */
+.chat {
+    background-image: url(images/icones/Chat.png);
+    background-repeat: no-repeat;
+}
+/* Contraste */
+.contraste {
+    background-image: url(images/icones/Contrast.png);
+    background-repeat: no-repeat;
+}
+/* Fonte Padrão */
+.font-padrao {
+    background-image: url(images/icones/Font_Padrao.png);
+    background-repeat: no-repeat;
+}
+/* Diminuir Fonte */
+.decrease-font {
+    background-image: url(images/icones/Decrease_Font.png);
+    background-repeat: no-repeat;
+}
+/* Aumentar Fonte */
+.increase-font {
+    background-image: url(images/icones/Incrase_Font.png);
+    background-repeat: no-repeat;
+}
+/* Patas */
+.patas {
+    background-image: url(images/icones/Patas.png);
+    background-repeat: no-repeat;
+}
+/* Calendario */
+.calendario {
+    background-image: url(images/icones/Calendario.png);
+    background-repeat: no-repeat;
+}
+/* Login */
+.login {
+    background-image: url(images/icones/Login.png);
+    background-repeat: no-repeat;
+}
+/* Documento */
+.documento {
+    background-image: url(images/icones/Documento.png);
+    background-repeat: no-repeat;
+}
+/* Locked */
+.lock {
+    background-image: url(images/icones/Lock.png);
+    background-repeat: no-repeat;
+}
+/* Seta Esquerda */
+.seta-esquerda{
+    background-image: url(images/icones/SetaEsquerda.png);
+    rotate: 180deg;
+    background-repeat: no-repeat;
+}
+
+/* Home */
+.home{
+    background-image: url(images/icones/Home.png);
+    background-repeat: no-repeat;
+}
+/* Enviar */
+.enviar{
+    background-image: url(images/icones/Enviar.png);
+    background-repeat: no-repeat;
+}
+
+.camera-preta{
+    width: 60px;
+    height: 60px;
+    background-size: 60px !important;
+    background-image: url(images/icones/Camera.jpeg);
+    background-repeat: no-repeat;
+}

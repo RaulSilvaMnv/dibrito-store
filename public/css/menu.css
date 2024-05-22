@@ -1,0 +1,16 @@
+.menu:hover {
+    background-color: #192844 !important;
+    color: #FFF !important;
+}
+
+.ativo {
+    background-color: #B0E0E6 !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fs-7{
+    font-size: 0.9rem;
+}

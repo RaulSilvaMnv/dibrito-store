@@ -1,0 +1,52 @@
+.brasao {
+    float: left;
+    margin: 0.5rem;
+    height: 60%;
+}
+
+
+/* Display Mobile */
+
+@media screen and (max-width:768px) {
+    #brasaoMobile,
+    #nomeAplicacaoMobile {
+        display: flex !important;
+        justify-content: center;
+    }
+    #brasaoDesktop,
+    #nomeAplicacaoDesktop {
+        display: none !important;
+    }
+}
+
+
+/* Display Desktop */
+
+.divHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .divHeader {
+        flex-wrap: wrap;
+    }
+    header {
+        height: auto;
+        padding-bottom: -2em;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #brasaoDesktop {
+        display: flex !important;
+    }
+    #brasaoMobile,
+    #nomeAplicacaoMobile {
+        display: none !important;
+    }
+    .NomeAplicacao {
+        float: right;
+        margin: 0 0 0 0;
+    }
+}

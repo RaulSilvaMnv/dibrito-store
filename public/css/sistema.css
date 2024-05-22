@@ -1,0 +1,116 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/************************** Classes de bibliotecas ***************************************/
+
+.page-link {
+    border-radius: 0 !important;
+    margin-right: 0.2em;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+}
+
+.sw-blue .onoffswitch-inner:before {
+    background-color: #3276b1;
+}
+
+.switch-disabled .onoffswitch-inner:after {
+    background-color: #888;
+}
+
+.switch-disabled .onoffswitch-inner:before {
+    background-color: #888;
+}
+
+.form-check-input {
+    height: 1.5em;
+    width: 3.5em !important;
+}
+
+.selectize-input {
+    border-radius: 0 !important;
+    min-height: 37px !important;
+    z-index: 0;
+}
+
+
+/* .selectize-control {
+    z-index: 0;
+} */
+
+.input-group-addon {
+    padding: 4px 6px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.table> :not(caption)>*>* {
+    padding: 0.10rem 0.10rem !important;
+}
+
+
+/************************** Classes de bibliotecas ***************************************/
+
+#mensagem {
+    display: none;
+}
+
+.mensagem {
+    position: fixed;
+    top: 10%;
+    left: 2%;
+    width: 95%;
+    height: 6%;
+    text-align: center;
+    padding: 4px;
+    z-index: 5000;
+    border-radius: 0;
+}
+
+.lblMensagem {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: #000;
+    background: rgba(255, 255, 0, 0);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    margin: -8px -8px 0 0;
+}
+
+.label {
+    padding: 0.3rem 1.5rem;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.spanOcultarSenha,
+.spanMostrarSenha {
+    float: right;
+    margin-top: -2em;
+    margin-right: 1em;
+}

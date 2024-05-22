@@ -1,0 +1,131 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer{
+    position: relative;
+}
+
+
+/************************** Classes de bibliotecas ***************************************/
+
+.page-link {
+    border-radius: 0 !important;
+    margin-right: 0.2em;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+}
+
+.page-link:focus {
+    box-shadow: none !important;
+}
+
+.page-item.active .page-link {
+    background: #192844 !important;
+    border-color: #192844 !important;
+}
+
+.form-control,
+.form-select {
+    background-color: #FFF !important;
+    border-color: #192844 !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none !important;
+}
+
+.table> :not(caption)>*>* {
+    padding: 0.10rem 0.10rem !important;
+}
+
+.cleditorMain {
+    border: 1px solid #192844 !important;
+}
+
+.form-check-input {
+    font-size: 1.5em !important;
+    margin-left: -1.8em !important;
+    box-shadow: none !important;
+}
+
+.form-check-input:checked {
+    background-color: #192844 !important;
+    border-color: #192844 !important;
+}
+
+
+/************************** Classes de bibliotecas ***************************************/
+
+#mensagem {
+    display: none;
+}
+
+.mensagem {
+    position: fixed;
+    top: 10%;
+    left: 2%;
+    width: 95%;
+    height: 6%;
+    text-align: center;
+    padding: 4px;
+    z-index: 5000;
+    border-radius: 0;
+}
+
+.lblMensagem {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: #000;
+    background: rgba(255, 255, 0, 0);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    margin: -8px -8px 0 0;
+}
+
+.label {
+    padding: 0.3rem 1.5rem;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.spanOcultarSenha,
+.spanMostrarSenha {
+    float: right;
+    margin-top: -2em;
+    margin-right: 1em;
+}
+
+.spanInformacaoLabel {
+    font-size: 0.8em;
+    color: #9D0202;
+    float: inline-end;
+}
+
+.itemObrigatorio {
+    color: #dc3545;
+    font-weight: 800;
+}
+.barra-superior {
+    min-height: 3rem;
+    max-height: 3rem;
+    min-width: 100%;
+}

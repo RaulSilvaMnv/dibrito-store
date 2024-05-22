@@ -1,0 +1,36 @@
+@media screen and (width>564px) {
+    footer {
+        background: #B0E0E6;
+        height: 3.5em;
+    }
+}
+
+.footer {
+    padding-top: 0.3em;
+    text-align: center;
+}
+
+.h5-footer {
+    position: absolute;
+    font-size: 100%;
+    bottom: 0;
+}
+
+.footer-barra {
+    background: #2E8B57;
+    height: 1.4em;
+    margin-top: -1.1em;
+}
+
+@media screen and (width<602px) {
+    .h5-footer {
+        font-size: 80%;
+    }
+}
+
+@media screen and (width<565px) {
+    .fot {
+        background: #B0E0E6;
+        height: 2.8em !important;
+    }
+}
