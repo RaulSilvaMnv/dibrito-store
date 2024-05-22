@@ -21,7 +21,7 @@
         <div class="">
             <span class="bg-primary py-2 text-white border border-primary text-uppercase fs-6 fw-bold d-flex align-items-center rounded-0 ps-4">Destaques</span>
         </div>  
-        <div class="col-12 d-flex justify-content-center pt-5">
+        <div class="col-12 d-flex justify-content-center pt-5 pb-5">
             <div class="pe-3">
                 <div class="card" style="width: 18rem;">
                     <img src="{{asset('imagens/TERNO.jpg')}}" class="card-img-top" alt="...">
@@ -82,9 +82,38 @@
                     </div>
                 </div>
             </div>
-            
+        </div>
+        <div class="">
+            <span class="bg-primary py-2 text-white border border-primary text-uppercase fs-6 fw-bold d-flex align-items-center rounded-0 ps-4">Contato</span>
+        </div>
+        @component('componentes.formularios.form-contato')
+        @endcomponent           
     </div>
 @endsection
 @section('script')
-<script></script>
+<script type="text/javascript">
+    function sendToWhatsApp() {
+            var nome = document.getElementById("nome").value;
+            var sobrenome = document.getElementById("sobrenome").value;
+            var email = document.getElementById("email").value;
+            var celular = document.getElementById("celular").value;
+            var assunto = document.getElementById("assunto").value;
+
+            // Validate required fields
+            if (!nome || !sobrenome || !email || !celular || !assunto) {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+
+            var mensagem = `*Nome:* ${nome}%0A` +
+                           `*Sobrenome:* ${sobrenome}%0A` +
+                           `*E-mail:* ${email}%0A` +
+                           `*Celular:* ${celular}%0A` +
+                           `*Assunto de Interesse:* ${assunto}`;
+
+            var url = `https://wa.me/5527999109108?text=${mensagem}`;
+
+            window.open(url, '_blank');
+        }   
+</script>
 @endsection
