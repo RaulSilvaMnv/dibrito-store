@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/portal-servicos.css')}}" media="screen" />
     <link rel="stylesheet" type="text/css" href="{{asset('css/nav-bar.css')}}" media="screen" />
     <link rel="stylesheet" type="text/css" href="{{asset('css/icones.css')}}" media="screen" />
+    
     <title>DiBrito</title>
 </head>
 <body>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\FrontController;
+use App\Http\Controllers\Front\ProdutosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +16,6 @@ use App\Http\Controllers\Front\FrontController;
 */
 
 Route::group(['namespace'=> 'App\Http\Controllers\Front'], function(){
-Route::get('/', [FrontController::class,'index'])->name('front-index');
+    Route::get('/', [FrontController::class,'index'])->name('front-index');
+    Route::get('/ternos', [ProdutosController::class, 'ternos'])->name('ternos-index');
 });
