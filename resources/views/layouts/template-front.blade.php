@@ -18,13 +18,15 @@
 </head>
 <body>
     <header class=" bg-primary" style="height: 80px">
-        @include('componentes.header.header')
+        @component('componentes.header.header')
+        @endcomponent
     </header>
-    <main class="col-12 d-flex bg-secondary" style="height: 2000px">
+    <main class="col-12 d-flex bg-secondary" style="height: 2800px">
         @yield('body')
     </main>
     <footer class="bg-info-light">
-        @include('componentes.footer.footer')
+       @component('componentes.footer.footer')
+       @endcomponent
     </footer>
     <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/jquery.mask.js')}}"></script>
