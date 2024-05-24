@@ -12,16 +12,18 @@
             <button id="scroll-left" class="btn btn-primary position-absolute start-0 top-50 translate-middle-y" style="z-index: 20;">‹</button>
             <div id="fade-left"></div>
             <div class="d-flex flex-nowrap overflow-auto pt-5" id="card-container">
-                <div class="pe-3 pb-3 flex-shrink-0">
-                    <div class="card">
-                        <img src="{{asset('imagens/TERNO.jpg')}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">TERNOS</h5>
-                            <p class="card-text">Oxford e Poliviscose, perfeitos para um visual elegante e profissional</p>
-                            <a href="{{route('ternos-index')}}" class="btn btn-lg btn-primary rounded-3 bg-info w-100" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">Saiba Mais</a>
+                @foreach($products as $product)
+                    <div class="pe-3 pb-3 flex-shrink-0">
+                        <div class="card">
+                            <img src="{{ asset($product['imagem']) }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">{{ $product['tipo'] }}</h5>
+                                <p class="card-text">{{ $product['descricao_card'] }}</p>
+                                <a href="{{ route('produtos-index', $product['id']) }}" class="btn btn-lg btn-primary rounded-3 bg-info w-100" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">Saiba Mais</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
                 <!-- Repeat other cards as needed -->
             </div>
             <div id="fade-right"></div>

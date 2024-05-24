@@ -17,5 +17,5 @@ use App\Http\Controllers\Front\ProdutosController;
 
 Route::group(['namespace'=> 'App\Http\Controllers\Front'], function(){
     Route::get('/', [FrontController::class,'index'])->name('front-index');
-    Route::get('/ternos', [ProdutosController::class, 'ternos'])->name('ternos-index');
+    Route::get('/produtos/{id}', [ProdutosController::class, 'produtos'])->name('produtos-index');
 });

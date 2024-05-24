@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/portal-servicos.css')}}" media="screen" />
     <link rel="stylesheet" type="text/css" href="{{asset('css/nav-bar.css')}}" media="screen" />
     <link rel="stylesheet" type="text/css" href="{{asset('css/icones.css')}}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/produtos.css')}}" media="screen" />
     
     <title>DiBrito</title>
 </head>
@@ -36,7 +37,7 @@
     <script type="text/javascript" src="{{asset('js/template.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/funcoes.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/front.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/nightowl.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/produtos.js')}}"></script>
     @yield('script')
 </body>
 </html>
