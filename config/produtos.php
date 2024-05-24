@@ -19,7 +19,7 @@ return [
         'imagem_4' => 'imagens/TERNO4.jpg',
     ],
     [
-        'id' => 2,
+        'id' => 2 ,
         'tipo' => 'Ternos Poliviscose',
         'descricao_card' => 'Oxford e Poliviscose, perfeitos para um visual elegante e profissional',
         'descricao' => 'Eleve seu estilo com o Terno Slim Fit de Poliviscose, 

@@ -2,6 +2,27 @@
 @section('body')
 {{-- <link rel="stylesheet" type="text/css" href="{{asset('css/produtos.css')}}" media="screen" /> --}}
     <style>
+        @media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}   
     </style>
    <div class="card-wrapper">
     <div class="card">
@@ -67,7 +88,7 @@
             </div>
             <div class="purchase-info">
                 <input class="" type="number" min="1" value="1">
-                <button type="button" class="btn mt-3">Fazer pedido</button>
+                <button id="btnFazerPedido" class="btn mt-3">Fazer pedido</button>
             </div>
             <div class="social-links">
                 <p>Compartilhar</p>
@@ -90,5 +111,24 @@
 @endsection
    
 @section('script')
-    <script type="text/javascript"></script>    
+    <script type="text/javascript">
+        document.getElementById('btnFazerPedido').addEventListener('click', function() {
+            // Aqui você fará a requisição ao backend (PHP) para processar o pedido
+            fetch('processar_pedido.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ /* Aqui você pode enviar quaisquer dados adicionais necessários */ }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Exibe uma mensagem para o usuário ou redireciona para outra página, etc.
+                alert(data.message); // Você pode retornar uma mensagem do backend para exibir para o usuário
+            })
+            .catch(error => {
+                console.error('Erro ao processar pedido:', error);
+            });
+        });       
+    </script>    
 @endsection

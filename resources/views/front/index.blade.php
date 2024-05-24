@@ -1,5 +1,29 @@
 @extends('layouts.template-front')
 @section('body')
+<style>
+    .card {
+        height: 500px;
+        width: 300px;
+        border-radius: 20px;
+        transition: transform 0.1s ease-in-out;
+    }
+    .card:hover{
+        transform: scale(1.05);
+    }
+    .card-img-top {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .card-body {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .card-footer {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+        
+</style>
     <div class="col-12">
         <div class="d-flex flex-column flex-lg-row">
             @component('componentes.formularios.carrossel')
@@ -14,17 +38,20 @@
             <div class="d-flex flex-nowrap overflow-auto pt-5" id="card-container">
                 @foreach($products as $product)
                     <div class="pe-3 pb-3 flex-shrink-0">
-                        <div class="card">
-                            <img src="{{ asset($product['imagem']) }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">{{ $product['tipo'] }}</h5>
-                                <p class="card-text">{{ $product['descricao_card'] }}</p>
-                                <a href="{{ route('produtos-index', $product['id']) }}" class="btn btn-lg btn-primary rounded-3 bg-info w-100" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">Saiba Mais</a>
+                        <div class="card d-flex flex-column justify-content-between">
+                            <img src="{{ asset($product['imagem']) }}" class="card-img-top" alt="{{ $product['tipo'] }}">
+                            <div class="card-body d-flex flex-column justify-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">{{ $product['tipo'] }}</h5>
+                                    <p class="card-text">{{ $product['descricao_card'] }}</p>
+                                </div>
+                                <div class="mt-auto">
+                                    <a href="{{ route('produtos-index', $product['id']) }}" class="btn btn-lg btn-primary rounded-3 bg-info w-100">Saiba Mais</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 @endforeach
-                <!-- Repeat other cards as needed -->
             </div>
             <div id="fade-right"></div>
             <button id="scroll-right" class="btn btn-primary position-absolute end-0 top-50 translate-middle-y" style="z-index: 20;">›</button>
@@ -32,8 +59,8 @@
         <div class="my-2">
             <span class="bg-primary py-2 text-white border border-primary text-uppercase fs-6 fw-bold d-flex align-items-center rounded-0 ps-4">Sobre nós</span>
         </div>
-        <div class="row pt-5 pb-5">
-            <div class="col-12 col-md-8 d-flex justify-content-center container-fluid pt-5">
+        <div class="d-flex pt-5 pb-5">
+            <div class="col-8 col-md-8 d-flex justify-content-center container-fluid pt-5">
                 <span class="fs-6 fw-medium">
                     Eu trabalhava no Espírito Santo em uma fábrica de massas chamada Belo Massas, onde gostava do meu trabalho e dos benefícios. 
                     No entanto, minha esposa e eu queríamos mais tempo para nosso serviço voluntário ajudando pessoas com deficiência auditiva a estudar a Bíblia em língua de sinais. 
